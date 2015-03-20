@@ -1,0 +1,20 @@
+.calendar {
+    border-top: 1px solid darkgrey;
+    width: 70%;
+    margin: 0 15%;
+    height: 600px;
+    overflow: auto;
+}
+
+.calendar__table {
+    border-collapse: collapse;
+    width: 100%;
+    position: relative;
+    top: -1px;
+}
+
+.calendar__table td {
+    border: 1px solid grey;
+    height: 100px;
+    box-sizing: border-box;
+}

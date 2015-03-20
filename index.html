@@ -2,11 +2,24 @@
 <html>
 <head>
     <meta charset="UTF-8" />
-    <title>Document</title>
+    <title>Test Calendar</title>
+    <!-- vendor styles -->
+    <link rel="stylesheet" href="bower_components/angular/angular-csp.css" />
+
+    <!-- app styles -->
+    <link rel="stylesheet" href="styles/calendar.css" />
 </head>
-<body>
+<body ng-app="calendarApp">
+    <div class="container">
+        <ng-include src="'views/calendar.html'" ng-controller="Calendar"></ng-include>
+    </div>
 
-    Hello Calendar!
+    <!-- vendor scripts -->
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-vs-repeat/src/angular-vs-repeat.min.js"></script>
 
+    <!-- app scripts -->
+    <script src="scripts/app.js"></script>
+    <script src="scripts/controllers/calendar.js"></script>
 </body>
 </html>
