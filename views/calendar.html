@@ -11,9 +11,9 @@
         </div>
         <div class="calendar__viewport">
             <table class="calendar__table">
-                <tr ng-repeat="row in rows track by $index">
-                    <td ng-repeat="day in days">
-                        {{day}}
+                <tr ng-repeat="week in weeks" ng-style="{ height: trHeight + 'px'}">
+                    <td ng-repeat="day in week" ng-class="{ holiday: day.getDay() % 6 == 0, today: day.getTime() == now }">
+                        <div class="day">{{day.getDate()}}.{{day.getMonth()}}.{{day.getFullYear()}}</div>
                     </td>
                 </tr>
             </table>

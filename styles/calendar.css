@@ -14,7 +14,7 @@
 
 .calendar__header div {
     display: inline-block;
-    padding: 4px 10px;
+    padding: 10px;
     box-sizing: border-box;
     width: 14.28%;
     float: left;
@@ -24,7 +24,7 @@
 .calendar__viewport {
     position: absolute;
     border-top: 1px solid #777;
-    top: 20px;
+    top: 40px;
     right: 0;
     bottom: 0;
     left: 0;
@@ -46,4 +46,20 @@
 .calendar__table td {
     border: 1px solid #ccc;
     box-sizing: border-box;
+    overflow: auto;
+    vertical-align: top;
+    width: 14.29%;
+}
+
+.calendar__table .day {
+    text-align: right;
+    padding: 10px;
+}
+
+.holiday {
+    background-color: #eee;
+}
+
+.today .day {
+    color: red;
 }
