@@ -1,3 +1,6 @@
 [submodule "assist-converter"]
 	path = assist-converter
 	url = https://github.com/DimaRGB/assist-converter.git
+[submodule "detective_agency"]
+	path = detective_agency
+	url = git@github.com:DimaRGB/detective_agency.git
